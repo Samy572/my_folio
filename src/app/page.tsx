@@ -9,7 +9,6 @@ export default function Home() {
 		<div className="w-full h-2 bg-gradient-to-r from-indigo-500 via-red-500 to-purple-500 ">
 			<div className="max-w-7xl mx-auto  px-3 pt-8 ">
 				<Navbar />
-
 				<MobileNavBar />
 				<About />
 				<Skills />
