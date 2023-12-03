@@ -17,7 +17,9 @@ export default function RootLayout({
 }) {
 	return (
 		<html lang="en">
-			<body className={clsx(inter.className, 'select-none bg-[#181818]')}>{children}</body>
+			<body className={clsx(inter.className, 'select-none bg-primary')}>
+				{children}
+			</body>
 		</html>
 	);
 }

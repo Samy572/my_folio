@@ -23,7 +23,7 @@ const MobileNavBar = () => {
 						openNav
 							? 'flexbg-slate-600 translate-x-0   z-20'
 							: 'translate-x-[-120%] ',
-						'transition-all duration-500  flex-col gap-5 justify-center lg:text-xl w-full h-[100%] bg-[#181818]  z-20 p-0 flex items-start  text-xl px-7 space-y-3'
+						'transition-all duration-500  flex-col gap-5 justify-center lg:text-xl w-full h-[100%] bg-primary  z-20 p-0 flex items-start  text-xl px-7 space-y-3'
 					)}
 				>
 					<li onClick={() => setOpenNav(false)} className="w-50 ">
