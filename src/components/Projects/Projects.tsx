@@ -1,13 +1,66 @@
+'use client';
 import { GetProject } from '@/components/Projects/getProject/GetProject';
+import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import Badge from '../reusable/Badge';
 import Link from 'next/link';
 import Image from 'next/image';
+import { useLayoutEffect, useRef } from 'react';
 const Projects = () => {
+	gsap.registerPlugin(ScrollTrigger);
+	const titleRef = useRef(null);
+	const projectRefs = useRef<Array<HTMLDivElement | null>>([]);
+	useLayoutEffect(() => {
+		gsap.fromTo(
+			titleRef.current,
+			{
+				opacity: 0,
+				y: 50,
+				ease: 'power1',
+			},
+			{
+				opacity: 1,
+				y: 0,
+				duration: 0.3,
+				scrollTrigger: {
+					trigger: titleRef.current,
+					toggleActions: 'play pause none none',
+					start: 'top 70% ',
+					once: true,
+				},
+			}
+		);
+		projectRefs.current.forEach((projectRef, index) => {
+			gsap.fromTo(
+				projectRef,
+				{
+					opacity: 0,
+					y: 50,
+					ease: 'power1',
+				},
+				{
+					opacity: 1,
+					y: 0,
+					duration: 0.3,
+					delay: 0.1 * index,
+					scrollTrigger: {
+						trigger: projectRef,
+						toggleActions: 'play pause none none',
+						start: 'top 90%',
+						once: true,
+					},
+				}
+			);
+		});
+	}, []);
+
 	const getProject = GetProject();
 	return (
 		<section id="Projects" className=" h-[50vh]  w-full  ">
 			<div className="flex justify-center lg:justify-start ">
-				<h2 className="font-bold text-4xl text-border w-fit ">My Projects</h2>
+				<h2 ref={titleRef} className="font-bold text-4xl text-border w-fit ">
+					My Projects
+				</h2>
 			</div>
 			<div
 				className="hidden lg:flex h-full  items-center justify-ce
@@ -15,8 +68,12 @@ const Projects = () => {
 			>
 				<div className="w-full grid grid-cols-3 relative gap-4">
 					{getProject.map(
-						({ label, png, description, path, language, github, id }) => (
+						(
+							{ label, png, description, path, language, github, id },
+							index
+						) => (
 							<div
+								ref={(el) => (projectRefs.current[index] = el)}
 								key={id}
 								className="relative z-10 text-white  bg-[#36363b] h-64 w-full p-3 rounded-3xl grid "
 							>
