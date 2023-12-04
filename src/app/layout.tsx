@@ -17,7 +17,10 @@ export default function RootLayout({
 }) {
 	return (
 		<html lang="en">
-			<body className={clsx(inter.className, 'select-none bg-primary')}>
+			<body
+				suppressHydrationWarning={true}
+				className={clsx(inter.className, 'select-none bg-primary')}
+			>
 				{children}
 			</body>
 		</html>

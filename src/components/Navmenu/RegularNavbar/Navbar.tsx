@@ -10,7 +10,7 @@ const Navbar = () => {
 	useLayoutEffect(() => {
 		gsap.fromTo(
 			portFolioRef.current,
-			{ opacity: 0, y: -50, ease: 'power1' },
+			{ y: -50, ease: 'power1' },
 			{
 				opacity: 1,
 				y: 0,
@@ -22,7 +22,6 @@ const Navbar = () => {
 			gsap.fromTo(
 				linkRef,
 				{
-					opacity: 0,
 					y: -100,
 					ease: 'power1',
 				},
@@ -41,25 +40,25 @@ const Navbar = () => {
 			<nav className="lg:flex justify-between">
 				<h1
 					ref={portFolioRef}
-					className="text-3xl tracking-wider font-semibold"
+					className="opacity-0 text-3xl tracking-wider font-semibold"
 				>
 					<strong>Portfolio.</strong>
 				</h1>
 				<ul className="flex lg:gap-14 gap-5 justify-around lg:text-xl">
 					<li
-						className="nav-to-section"
+						className="nav-to-section opacity-0"
 						ref={(el) => (linksRefs.current[0] = el)}
 					>
 						<Link href="#Skills">Skills</Link>
 					</li>
 					<li
-						className="nav-to-section"
+						className="nav-to-section opacity-0"
 						ref={(el) => (linksRefs.current[1] = el)}
 					>
 						<Link href="#Projects">Projects</Link>
 					</li>
 					<li
-						className="nav-to-section"
+						className="nav-to-section opacity-0"
 						ref={(el) => (linksRefs.current[2] = el)}
 					>
 						<Link href="#Contact">Contact</Link>
