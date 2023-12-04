@@ -24,7 +24,7 @@ const Projects = () => {
 				duration: 0.3,
 				scrollTrigger: {
 					trigger: titleRef.current,
-					toggleActions: 'play pause none none',
+					toggleActions: 'play resume none none',
 					start: 'top 65% ',
 					once: true,
 				},
@@ -45,7 +45,7 @@ const Projects = () => {
 					delay: 0.1 * index,
 					scrollTrigger: {
 						trigger: projectRef,
-						toggleActions: 'play pause none none',
+						toggleActions: 'play resume none none',
 						start: 'top 70%',
 						once: true,
 					},
@@ -75,7 +75,7 @@ const Projects = () => {
 							<div
 								ref={(el) => (projectRefs.current[index] = el)}
 								key={id}
-								className="relative z-10 text-white  bg-[#36363b] h-64 w-full p-3 rounded-3xl grid "
+								className="relative  text-white  bg-[#36363b] h-64 w-full p-3 rounded-3xl grid "
 							>
 								<div className="flex gap-2 items-center relative">
 									<h3 className="text-2xl font-semibold">{label}</h3>
@@ -85,7 +85,7 @@ const Projects = () => {
 								</div>
 								<p>{description}</p>
 								<Link
-									className="absolute right-3 top-3"
+									className="absolute right-3 top-3 w-fit h-fit"
 									href={path}
 									target="_blank"
 								>
@@ -97,7 +97,7 @@ const Projects = () => {
 										alt="go to project"
 									/>
 								</Link>
-								<Link className="" href={github} target="_blank">
+								<Link className="w-fit h-fit" href={github} target="_blank">
 									<Image
 										src={'/asset/svg/github.svg'}
 										width={25}

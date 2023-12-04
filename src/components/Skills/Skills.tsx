@@ -15,6 +15,7 @@ const Skills = () => {
 		gsap.fromTo(
 			titleRef.current,
 			{
+				opacity: 0,
 				y: 50,
 				ease: 'power1',
 			},
@@ -24,9 +25,9 @@ const Skills = () => {
 				duration: 0.3,
 				scrollTrigger: {
 					trigger: titleRef.current,
-					toggleActions: 'play pause none none',
-					start: 'top center  ',
+					toggleActions: 'play resume none none',
 					once: true,
+					start: ' center  ',
 				},
 			}
 		);
@@ -45,9 +46,9 @@ const Skills = () => {
 					delay: 0.1 * index,
 					scrollTrigger: {
 						trigger: skillRef,
-						toggleActions: 'play pause none none',
-						start: 'top center ',
+						toggleActions: 'play resume none none',
 						once: true,
+						start: ' center ',
 					},
 				}
 			);
@@ -57,19 +58,13 @@ const Skills = () => {
 	return (
 		<section id="Skills" className=" mt-6 py-4 lg:h-[50vh]    w-full ">
 			<div className="flex justify-center lg:justify-start pb-10">
-				<h2
-					ref={titleRef}
-					className=" font-bold text-4xl text-border w-fit opacity-0 "
-				>
+				<h2 ref={titleRef} className=" font-bold text-4xl text-border w-fit  ">
 					My Skills
 				</h2>
 			</div>
 			<div className=" justify-center  flex items-center  pt-3">
 				<div className=" w-full  lg:h-48   grid lg:grid-cols-3 grid-cols-1">
-					<div
-						ref={(el) => (skillRefs.current[0] = el)}
-						className="pt-5 opacity-0"
-					>
+					<div ref={(el) => (skillRefs.current[0] = el)} className="pt-5 ">
 						<h3 className="text-2xl font-semibold pb-5">Frontend</h3>
 						{frontend.map(({ label, svg, alt, path, className }) => {
 							return (
@@ -84,10 +79,7 @@ const Skills = () => {
 							);
 						})}
 					</div>
-					<div
-						className="pt-5 opacity-0"
-						ref={(el) => (skillRefs.current[1] = el)}
-					>
+					<div className="pt-5 " ref={(el) => (skillRefs.current[1] = el)}>
 						<h3 className="text-2xl font-semibold pb-5">Backend</h3>
 						{backend.map(({ label, svg, alt, path, className }) => {
 							return (
@@ -102,10 +94,7 @@ const Skills = () => {
 							);
 						})}
 					</div>
-					<div
-						className="pt-5  opacity-0"
-						ref={(el) => (skillRefs.current[2] = el)}
-					>
+					<div className="pt-5  " ref={(el) => (skillRefs.current[2] = el)}>
 						<h3 className="text-2xl font-semibold pb-5">Tools</h3>
 						{tools.map(({ label, svg, alt, path, className }) => {
 							return (
