@@ -13,7 +13,7 @@ export const GetProject = () => [
 				alt: 'react',
 				path: 'https://reactjs.org/',
 				className:
-					'inline-flex items-center justify-between rounded-md border w-fit px-2 py-0.5  font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-none  shadow bg-gradient-to-r from-indigo-500 to-purple-500 hover:from-indigo-700 hover:to-red-700 md:mr-4 mr-2 my-2  ',
+					' inline-flex items-center justify-between rounded-md border w-fit px-2 py-0.5  font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-none  shadow bg-gradient-to-r from-indigo-500 to-purple-500 hover:from-indigo-700 hover:to-purple-700 md:mr-4 mr-2 my-2 ',
 			},
 			{
 				label: 'Styled-Components',
@@ -21,7 +21,7 @@ export const GetProject = () => [
 				alt: 'styled-components',
 				path: 'https://styled-components.com/',
 				className:
-					'inline-flex items-center justify-between rounded-md border w-fit px-2 py-0.5  font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-none  shadow bg-gradient-to-r from-indigo-500 to-purple-500 hover:from-indigo-700 hover:to-red-700 md:mr-4 mr-2 my-2 ',
+					'inline-flex items-center justify-between rounded-md border w-fit px-2 py-0.5  font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-none  shadow bg-gradient-to-r from-indigo-500 to-purple-500 hover:from-indigo-700 hover:to-purple-700 md:mr-4 mr-2 my-2 ',
 			},
 		],
 		github: 'https://github.com/Samy572/burger-shop',
@@ -40,7 +40,7 @@ export const GetProject = () => [
 				alt: 'next',
 				path: 'https://nextjs.org/',
 				className:
-					'inline-flex items-center justify-between rounded-md border w-fit px-2 py-0.5  font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-none  shadow bg-gradient-to-r from-indigo-500 to-purple-500 hover:from-indigo-700 hover:to-red-700 md:mr-4 mr-2 my-2 ',
+					'inline-flex items-center justify-between rounded-md border w-fit px-2 py-0.5  font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-none  shadow bg-gradient-to-r from-indigo-500 to-purple-500 hover:from-indigo-700 hover:to-purple-700 md:mr-4 mr-2 my-2 ',
 			},
 			{
 				label: 'Typescript',
@@ -48,7 +48,7 @@ export const GetProject = () => [
 				alt: 'typescript',
 				path: 'https://www.typescriptlang.org/',
 				className:
-					'inline-flex items-center justify-between rounded-md border w-fit px-2 py-0.5  font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-none  shadow bg-gradient-to-r from-indigo-500 to-purple-500 hover:from-indigo-700 hover:to-red-700 md:mr-4 mr-2 my-2 ',
+					'inline-flex items-center justify-between rounded-md border w-fit px-2 py-0.5  font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-none  shadow bg-gradient-to-r from-indigo-500 to-purple-500 hover:from-indigo-700 hover:to-purple-700 md:mr-4 mr-2 my-2 ',
 			},
 		],
 		github: 'https://github.com/Samy572/my-app',
@@ -67,7 +67,7 @@ export const GetProject = () => [
 				alt: 'tailwind',
 				path: 'https://tailwindcss.com/',
 				className:
-					'transition-colors inline-flex items-center justify-between rounded-md border w-fit px-2 py-0.5  font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-none  shadow bg-gradient-to-r from-indigo-500 to-purple-500 hover:from-indigo-700 hover:to-red-700 md:mr-4 mr-2 my-2 ',
+					'inline-flex items-center justify-between rounded-md border w-fit px-2 py-0.5  font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-none  shadow bg-gradient-to-r from-indigo-500 to-purple-500 hover:from-indigo-700 hover:to-purple-700 md:mr-4 mr-2 my-2 ',
 			},
 		],
 

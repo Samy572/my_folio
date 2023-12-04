@@ -25,7 +25,7 @@ const Projects = () => {
 				scrollTrigger: {
 					trigger: titleRef.current,
 					toggleActions: 'play pause none none',
-					start: 'top 70% ',
+					start: 'top 65% ',
 					once: true,
 				},
 			}
@@ -46,7 +46,7 @@ const Projects = () => {
 					scrollTrigger: {
 						trigger: projectRef,
 						toggleActions: 'play pause none none',
-						start: 'top 90%',
+						start: 'top 70%',
 						once: true,
 					},
 				}
@@ -56,17 +56,17 @@ const Projects = () => {
 
 	const getProject = GetProject();
 	return (
-		<section id="Projects" className=" h-[50vh]  w-full  ">
-			<div className="flex justify-center lg:justify-start ">
+		<section id="Projects" className="  py-10 w-full  ">
+			<div className="flex justify-center lg:justify-start  lg:flex-col pb-10">
 				<h2 ref={titleRef} className="font-bold text-4xl text-border w-fit ">
 					My Projects
 				</h2>
 			</div>
 			<div
-				className="hidden lg:flex h-full  items-center justify-ce
+				className="flex h-full  items-center justify-ce
 			  pt-3 w-full "
 			>
-				<div className="w-full grid grid-cols-3 relative gap-4">
+				<div className="w-full grid lg:grid-cols-3 grid-cols-1 relative gap-4">
 					{getProject.map(
 						(
 							{ label, png, description, path, language, github, id },

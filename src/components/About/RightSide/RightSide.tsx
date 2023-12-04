@@ -10,14 +10,13 @@ const RightSide = () => {
 		gsap.fromTo(
 			myPhoto.current,
 			{
-				opacity: 0,
 				y: 30,
 				ease: 'power1',
 			},
 			{
 				opacity: 1,
 				y: 0,
-				delay: 0.35,
+				delay: 0.2,
 				duration: 0.2,
 			}
 		);
@@ -25,7 +24,7 @@ const RightSide = () => {
 	return (
 		<div
 			ref={myPhoto}
-			className="w-72 h-72  bg-gradient-to-b from-indigo-500 to-purple-100  rounded-full flex justify-center items-center"
+			className="opacity-0 w-72 h-72  bg-gradient-to-b from-indigo-500 to-purple-100  rounded-full flex justify-center items-center"
 		>
 			<Image
 				className="z-10 overflow-hidden w-72 h-72 rounded-full"

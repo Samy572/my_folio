@@ -15,7 +15,6 @@ const Skills = () => {
 		gsap.fromTo(
 			titleRef.current,
 			{
-				opacity: 0,
 				y: 50,
 				ease: 'power1',
 			},
@@ -56,9 +55,12 @@ const Skills = () => {
 	}, []);
 
 	return (
-		<section id="Skills" className=" mt-6 pt-3 lg:h-[50vh]    w-full ">
+		<section id="Skills" className=" mt-6 py-4 lg:h-[50vh]    w-full ">
 			<div className="flex justify-center lg:justify-start pb-10">
-				<h2 ref={titleRef} className=" font-bold text-4xl text-border w-fit ">
+				<h2
+					ref={titleRef}
+					className=" font-bold text-4xl text-border w-fit opacity-0 "
+				>
 					My Skills
 				</h2>
 			</div>
@@ -101,7 +103,7 @@ const Skills = () => {
 						})}
 					</div>
 					<div
-						className="pt-5 mb-20 opacity-0"
+						className="pt-5  opacity-0"
 						ref={(el) => (skillRefs.current[2] = el)}
 					>
 						<h3 className="text-2xl font-semibold pb-5">Tools</h3>

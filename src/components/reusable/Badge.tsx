@@ -22,10 +22,8 @@ const Badge = ({ label, svg, alt, path, className }: Props) => {
 					/>
 				</div>
 			)}{' '}
-			<div>{label}</div>
+			<span>{label}</span>
 		</a>
 	);
 };
 export default Badge;
-
-//rEvernodee8dJLaFsujS6q1EiXvZYmHXr8

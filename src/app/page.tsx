@@ -8,6 +8,7 @@ import { gsap } from 'gsap';
 import { useLayoutEffect, useRef } from 'react';
 import Contact from '@/components/Contact/Contact';
 import Footer from '@/components/Footer';
+import Caroussel from '@/components/Projects/Caroussel/Caroussel';
 
 export default function Home() {
 	const lineRef = useRef(null);
@@ -31,7 +32,7 @@ export default function Home() {
 		<div>
 			<div
 				ref={lineRef}
-				className="
+				className=" opacity-0
 			 h-2 bg-gradient-to-r from-indigo-500 via-red-500 to-purple-500 "
 			></div>
 			<div className="max-w-7xl mx-auto  px-3 pt-8 ">
