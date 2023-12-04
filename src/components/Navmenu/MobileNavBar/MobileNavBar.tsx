@@ -17,12 +17,13 @@ const MobileNavBar = () => {
 	return (
 		<header className="w-full overflow-hidden  lg:hidden  ">
 			<ToggleMenu openNav={openNav} setOpenNav={setOpenNav} />
+
 			<ul
 				className={clsx(
 					openNav
-						? 'flexbg-slate-600 translate-x-0  z-30 h-[105vh] fixed top-0 left-0 '
-						: 'translate-x-[-120%] z-30 h-[105vh] fixed top-0 left-0',
-					'transition-all duration-500  flex-col gap-5 justify-center lg:text-xl w-full  bg-primary   p-0 flex items-start  text-xl px-7 space-y-3'
+						? 'flexbg-slate-600 translate-y-0  z-30 h-[50vh] fixed  top-0 left-0 '
+						: 'translate-y-[-120%] z-30 h-[110vh] fixed left-0',
+					'transition-all duration-300 ease-in-out  flex-col gap-5 justify-center lg:text-xl w-full  backdrop-blur-2xl flex items-start  text-xl px-7 space-y-3 '
 				)}
 			>
 				<li onClick={() => setOpenNav(false)} className="w-50 ">
