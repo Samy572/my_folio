@@ -8,7 +8,6 @@ import { gsap } from 'gsap';
 import { useLayoutEffect, useRef } from 'react';
 import Contact from '@/components/Contact/Contact';
 import Footer from '@/components/Footer';
-import Caroussel from '@/components/Projects/Caroussel/Caroussel';
 
 export default function Home() {
 	const lineRef = useRef(null);

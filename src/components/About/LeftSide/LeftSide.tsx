@@ -25,7 +25,7 @@ const LeftSide = () => {
 	});
 	return (
 		<div ref={describeRef} className=" opacity-0 px-1 ">
-			<p className="text-2xl ">Hi there, I’m from </p>
+			<p className="text-2xl ">Hi there, I’m </p>
 			<h1 className="md:text-6xl text-4xl font-bold bg-gradient-to-r from-indigo-500 via-purple-300  bg-clip-text text-transparent">
 				Samy Chabbi
 			</h1>
