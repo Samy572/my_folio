@@ -25,12 +25,13 @@ const ToggleMenu = ({ openNav, setOpenNav }: Props) => {
 
 	return (
 		<>
-			{scrolling === false ? (
-				<button
-					onClick={() => setOpenNav(!openNav)}
-					className=" cursor-pointer z-50"
-					role="button"
-				>
+			<button
+				onClick={() => setOpenNav(!openNav)}
+				className=" cursor-pointer z-50"
+				role="button"
+				disabled={scrolling}
+			>
+				{scrolling === false ? (
 					<Image
 						className={clsx(
 							openNav ? 'opacity-0' : 'opacity-1 ',
@@ -41,19 +42,19 @@ const ToggleMenu = ({ openNav, setOpenNav }: Props) => {
 						height={35}
 						alt="menu"
 					/>
+				) : null}
 
-					<Image
-						className={clsx(
-							openNav === false ? 'opacity-0' : 'opacity-1',
-							'transition-opacity duration-500 fixed top-8 right-5 z-50  '
-						)}
-						src={'/asset/svg/close.svg'}
-						width={35}
-						height={35}
-						alt="close-menu"
-					/>
-				</button>
-			) : null}
+				<Image
+					className={clsx(
+						openNav === false ? 'opacity-0' : 'opacity-1',
+						'transition-opacity duration-500 fixed top-8 right-5 z-50  '
+					)}
+					src={'/asset/svg/close.svg'}
+					width={35}
+					height={35}
+					alt="close-menu"
+				/>
+			</button>
 		</>
 	);
 };
