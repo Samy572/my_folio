@@ -34,7 +34,7 @@ const LeftSide = () => {
 					<strong>Front end Web developer </strong>from France
 				</h2>
 				<h3 className="md:text-xl text-lg ">
-					I love creating great user experiences.
+					I enjoy creating great user experience.
 				</h3>
 			</div>
 			<div className=" pt-3">

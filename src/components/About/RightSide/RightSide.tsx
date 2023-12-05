@@ -24,14 +24,15 @@ const RightSide = () => {
 	return (
 		<div
 			ref={myPhoto}
-			className="opacity-0 w-72 h-72  bg-gradient-to-b from-indigo-500 to-purple-100  rounded-full flex justify-center items-center"
+			className="opacity-0 w-44 h-44 sm:h-fit sm:w-fit  bg-gradient-to-b from-indigo-500 to-purple-100  rounded-full flex justify-center items-center"
 		>
 			<Image
-				className="z-10 overflow-hidden w-72 h-72 rounded-full"
+				className="z-10 overflow-hidden  rounded-full"
 				src={'/asset/images/profile.png'}
-				width={150}
-				height={150}
-				alt="profile"
+				width={350}
+				height={350}
+				loading="lazy"
+				alt="profile Samy"
 			/>
 		</div>
 	);

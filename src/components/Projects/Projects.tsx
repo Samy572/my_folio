@@ -58,7 +58,10 @@ const Projects = () => {
 	return (
 		<section id="Projects" className="  py-10 w-full  ">
 			<div className="flex justify-center lg:justify-start  lg:flex-col pb-10">
-				<h2 ref={titleRef} className="font-bold text-4xl text-border w-fit ">
+				<h2
+					ref={titleRef}
+					className="font-bold text-4xl text-border w-fit  opacity-0"
+				>
 					My Projects
 				</h2>
 			</div>
@@ -75,7 +78,7 @@ const Projects = () => {
 							<div
 								ref={(el) => (projectRefs.current[index] = el)}
 								key={id}
-								className="relative  text-white  bg-[#36363b] h-64 w-full p-3 rounded-3xl grid "
+								className="relative  text-white  bg-[#36363b] h-64 w-full p-3 rounded-3xl grid opacity-0 "
 							>
 								<div className="flex gap-2 items-center relative">
 									<h3 className="text-2xl font-semibold">{label}</h3>
