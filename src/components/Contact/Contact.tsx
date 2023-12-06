@@ -40,6 +40,7 @@ const Contact = () => {
 				<h3 className="text-2xl  w-fit  ">
 					Feel free to contact me by{' '}
 					<a
+						target="_blank"
 						className="underline font-bold mr-1"
 						href="mailto:samy_ch@outlook.fr"
 					>
@@ -47,6 +48,7 @@ const Contact = () => {
 					</a>
 					or on{' '}
 					<a
+						target="_blank"
 						className="underline font-bold"
 						href="https://www.linkedin.com/in/samydevfront/"
 					>
