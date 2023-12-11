@@ -28,11 +28,11 @@ export const GetProject = () => [
 	},
 	{
 		id: 2,
-		label: 'Games',
+		label: 'Games Quest',
 		png: '/asset/images/projects/games.png',
 		description:
 			'An application for viewing and searching video games via the RAWG api.',
-		path: 'https://my-app-q5ox.vercel.app',
+		path: 'https://my-app-samy572.vercel.app',
 		language: [
 			{
 				label: 'Next',
