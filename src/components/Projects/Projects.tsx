@@ -1,5 +1,5 @@
 'use client';
-import { GetProject } from '@/components/Projects/getProject/GetProject';
+import { GetProjectDesktop } from '@/components/Projects/getProject/GetProjectDesktop';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import Badge from '../reusable/Badge';
@@ -9,6 +9,7 @@ import { useLayoutEffect, useRef } from 'react';
 const Projects = () => {
 	gsap.registerPlugin(ScrollTrigger);
 	const titleRef = useRef(null);
+	const testWindow = window.matchMedia('(min-width: 768px)');
 	const projectRefs = useRef<Array<HTMLDivElement | null>>([]);
 	useLayoutEffect(() => {
 		gsap.fromTo(
@@ -54,7 +55,7 @@ const Projects = () => {
 		});
 	}, []);
 
-	const getProject = GetProject();
+	const getProject = GetProjectDesktop(testWindow);
 	return (
 		<section id="Projects" className="  py-10 w-full  ">
 			<div className="flex justify-center lg:justify-start  lg:flex-col pb-10">
