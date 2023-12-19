@@ -2,17 +2,10 @@
 import { useEffect, useState } from 'react';
 import ToggleMenu from './ToggleMenu/ToggleMenu';
 import clsx from 'clsx';
+import useMobileLayout from '@/hooks/useMobileLayout';
 
 const MobileNavBar = () => {
-	const [openNav, setOpenNav] = useState(false);
-
-	useEffect(() => {
-		if (openNav) {
-			document.body.style.overflow = 'hidden';
-		} else {
-			document.body.style.overflow = 'unset';
-		}
-	});
+	const { openNav, setOpenNav } = useMobileLayout();
 
 	return (
 		<header className="w-full overflow-hidden  lg:hidden  ">
