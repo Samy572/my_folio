@@ -17,7 +17,7 @@ export default function RootLayout({
 }) {
 	return (
 		<html lang="en">
-			
+			<meta name="robots" content="index, follow"></meta>
 			<body
 				suppressHydrationWarning={true}
 				className={clsx(inter.className, 'select-none bg-primary')}
