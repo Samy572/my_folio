@@ -54,11 +54,11 @@ export const GetProjectMobile = () => [
 	},
 	{
 		id: 3,
-		label: 'Hoobank',
+		label: 'Page X',
 		png: '/asset/images/projects/hoobank.png',
 		description:
-			'A showcase site for a banking application created from a mock-up.',
-		path: 'https://hoobank-samy572.vercel.app/',
+			'A landding page where I had a bit of fun with framer motion and the component library aceternity ui ',
+		path: 'https://pagex-phi.vercel.app',
 		language: [
 			{
 				label: 'Tailwind',
@@ -68,8 +68,16 @@ export const GetProjectMobile = () => [
 				className:
 					'inline-flex items-center justify-between rounded-md border w-fit px-2 py-0.5  font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-none  shadow bg-gradient-to-r from-indigo-500 to-purple-500 hover:from-indigo-700 hover:to-purple-700 md:mr-4 mr-2 my-2 ',
 			},
+			{
+				label: 'Next',
+				svg: 'asset/svg/frontend/next.svg',
+				alt: 'next',
+				path: 'https://nextjs.org/',
+				className:
+					'inline-flex items-center justify-between rounded-md border w-fit px-2 py-0.5  font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-none  shadow bg-gradient-to-r from-indigo-500 to-purple-500 hover:from-indigo-700 hover:to-purple-700 md:mr-4 mr-2 my-2 ',
+			},
 		],
 
-		github: 'https://github.com/Samy572/hoobank',
+		github: 'https://github.com/Samy572/pagex',
 	},
 ];
