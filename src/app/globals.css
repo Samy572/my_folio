@@ -131,14 +131,14 @@ body {
 }
 
 .container-arrow:hover .first-arrow {
-	transform: translateY(-100%);
+	transform: translate(100%, -100%);
 }
 
 .container-arrow:hover .second-arrow {
-	transform: translateY(0%);
+	transform: translate(0%, 0%);
 }
 
 .second-arrow {
 	position: absolute;
-	transform: translateY(100%);
+	transform: translate(-100%, 100%);
 }
