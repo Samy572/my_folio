@@ -93,14 +93,14 @@ const Projects = () => {
 											target="_blank"
 										>
 											<Image
-												className="transition-transform first-arrow"
+												className="transition-transform duration-300 first-arrow"
 												src={'/asset/svg/arrow-up-right.svg'}
 												width={25}
 												height={25}
 												alt="go to project"
 											/>
 											<Image
-												className="transition-transform second-arrow"
+												className="transition-transform duration-300 second-arrow"
 												src={'/asset/svg/arrow-up-right.svg'}
 												width={25}
 												height={25}
