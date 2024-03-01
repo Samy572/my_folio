@@ -89,24 +89,33 @@ const Projects = () => {
 									>
 										<div className="flex gap-2 items-center relative">
 											<h3 className="text-2xl font-semibold">{label}</h3>
-											<div className="flex items-center">
+											<div className=" flex flex-1 items-center justify-between">
 												<Image src={png} width={40} height={40} alt={label} />
+
+												<Link
+													className="flex container-arrow  w-fit h-fit "
+													href={path}
+													target="_blank"
+												>
+													<Image
+														className="transition-transform first-arrow"
+														src={'/asset/svg/arrow-up-right.svg'}
+														width={25}
+														height={25}
+														alt="go to project"
+													/>
+													<Image
+														className="transition-transform second-arrow"
+														src={'/asset/svg/arrow-up-right.svg'}
+														width={25}
+														height={25}
+														alt="go to project"
+													/>
+												</Link>
 											</div>
 										</div>
 										<p>{description}</p>
-										<Link
-											className="absolute right-3 top-3 w-fit h-fit"
-											href={path}
-											target="_blank"
-										>
-											<Image
-												className="transition-transform transform hover:scale-110"
-												src={'/asset/svg/arrow-up-right.svg'}
-												width={25}
-												height={25}
-												alt="go to project"
-											/>
-										</Link>
+
 										<Link className="w-fit h-fit" href={github} target="_blank">
 											<Image
 												src={'/asset/svg/github.svg'}

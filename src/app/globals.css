@@ -123,3 +123,22 @@ body {
 .text-border:hover::before {
 	height: 15px;
 }
+
+.container-arrow {
+	position: relative;
+	height: fit-content;
+	overflow: hidden;
+}
+
+.container-arrow:hover .first-arrow {
+	transform: translateY(-100%);
+}
+
+.container-arrow:hover .second-arrow {
+	transform: translateY(0%);
+}
+
+.second-arrow {
+	position: absolute;
+	transform: translateY(100%);
+}
