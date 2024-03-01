@@ -32,6 +32,7 @@ const RightSide = () => {
 				width={350}
 				height={350}
 				loading="lazy"
+				priority={false}
 				alt="profile Samy"
 			/>
 		</div>
