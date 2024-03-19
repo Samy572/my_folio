@@ -28,11 +28,12 @@ const RightSide = () => {
 		>
 			<Image
 				className="z-10 overflow-hidden  rounded-full"
-				src={'/asset/images/profile.png'}
+				src={'/asset/images/profile.jpg'}
 				width={350}
 				height={350}
 				loading="lazy"
 				priority={false}
+				quality={60}
 				alt="profile Samy"
 			/>
 		</div>
