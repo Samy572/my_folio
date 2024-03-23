@@ -28,7 +28,7 @@ const RightSide = () => {
 		>
 			<Image
 				className="z-10 overflow-hidden  rounded-full"
-				src={'/asset/images/profile.jpg'}
+				src={'/asset/images/profile.webp'}
 				width={350}
 				height={350}
 				loading="lazy"
