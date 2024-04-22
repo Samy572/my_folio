@@ -1,21 +1,38 @@
-import { useEffect, useState } from 'react';
+import { useState, useEffect } from 'react';
 import { GetProjectMobile } from '@/components/Projects/getProject/GetProjectMobile';
 import { GetProjectDesktop } from '@/components/Projects/getProject/GetProjectDesktop';
 
 export default function useMobileLayout() {
-	const [openNav, setOpenNav] = useState<boolean>(false);
-	const [windowWidth, setWindowWidth] = useState<boolean>(false);
+	const [openNav, setOpenNav] = useState(false);
+	const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 	const [project, setProject] = useState(GetProjectMobile);
 
 	useEffect(() => {
-		window.innerWidth > 1024 ? setWindowWidth(true) : setWindowWidth(false);
-		window.innerWidth > 1024
-			? setProject(GetProjectDesktop)
-			: setProject(GetProjectMobile);
+		const handleResize = () => {
+			setWindowWidth(window.innerWidth);
+			window.innerWidth > 1024
+				? setProject(GetProjectDesktop)
+				: setProject(GetProjectMobile);
+		};
+
+		window.addEventListener('resize', handleResize);
+
+		return () => {
+			window.removeEventListener('resize', handleResize);
+		};
+	}, []);
+
+	useEffect(() => {
 		openNav
 			? (document.body.style.overflow = 'hidden')
 			: (document.body.style.overflow = 'unset');
-	}, [windowWidth, openNav]);
+	}, [openNav]);
+
+	useEffect(() => {
+		window.innerWidth > 1024
+			? setProject(GetProjectDesktop)
+			: setProject(GetProjectMobile);
+	}, [windowWidth]);
 
 	return {
 		openNav,
