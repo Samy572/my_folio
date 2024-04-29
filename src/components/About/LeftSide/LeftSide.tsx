@@ -31,10 +31,14 @@ const LeftSide = () => {
 			</h1>
 			<div className="space-y-4">
 				<h2 className="md:text-3xl text-xl font-bold">
-					<strong>Front end Web developer </strong>from France
+					<strong>
+						A passionate Front End Web Developer from France With a focus on
+						React / Next
+					</strong>
 				</h2>
 				<h3 className="md:text-xl text-lg ">
-					I enjoy creating great user experience.
+					I specialize in creating dynamic and intuitive user interfaces that
+					provide exceptional user experiences.
 				</h3>
 			</div>
 			<div className=" pt-3">

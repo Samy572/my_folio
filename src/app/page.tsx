@@ -32,7 +32,7 @@ export default function Home() {
 			<div
 				ref={lineRef}
 				className=" opacity-0
-			 h-2 bg-gradient-to-r from-indigo-500  to-purple-700 "
+			 h-2 bg-gradient-to-r from-indigo-500  to-purple-300 "
 			></div>
 			<div className="max-w-7xl mx-auto  px-3 pt-8 ">
 				<Navbar />
