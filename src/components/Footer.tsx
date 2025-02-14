@@ -1,7 +1,8 @@
 const Footer = () => {
+	const date = new Date().getFullYear();
 	return (
 		<footer className="text-center pb-10">
-			© Copyright 2024 Samy Chabbi. All rights reserved.{' '}
+			© Copyright {date} Samy Chabbi. All rights reserved.
 		</footer>
 	);
 };
