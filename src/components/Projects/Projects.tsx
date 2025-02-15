@@ -83,7 +83,9 @@ const Projects = () => {
 						) => (
 							<div
 								onMouseMove={(e) => handleMouseHover(e, id)}
-								ref={(el) => (projectRefs.current[index] = el)}
+								ref={(el) => {
+									projectRefs.current[index] = el;
+								}}
 								key={id}
 								className="relative  text-white  bg-[#36363b] h-64 w-full p-3 rounded-3xl grid opacity-0 overflow-hidden "
 							>
