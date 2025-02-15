@@ -64,7 +64,7 @@ const Skills = () => {
 			</div>
 			<div className=" justify-center  flex items-center  pt-3">
 				<div className=" w-full  lg:h-48   grid lg:grid-cols-3 grid-cols-1">
-					<div ref={(el) => (skillRefs.current[0] = el)} className="pt-5 ">
+					<div ref={(el) => {skillRefs.current[0] = el}} className="pt-5 ">
 						<h3 className="text-2xl font-semibold pb-5">Frontend</h3>
 						{frontend.map(({ label, svg, alt, path, className }) => {
 							return (
@@ -79,7 +79,7 @@ const Skills = () => {
 							);
 						})}
 					</div>
-					<div className="pt-5 " ref={(el) => (skillRefs.current[1] = el)}>
+					<div className="pt-5 " ref={(el) => {skillRefs.current[1] = el}}>
 						<h3 className="text-2xl font-semibold pb-5">Backend</h3>
 						{backend.map(({ label, svg, alt, path, className }) => {
 							return (
@@ -94,7 +94,7 @@ const Skills = () => {
 							);
 						})}
 					</div>
-					<div className="pt-5  " ref={(el) => (skillRefs.current[2] = el)}>
+					<div className="pt-5  " ref={(el) => {skillRefs.current[2] = el}}>
 						<h3 className="text-2xl font-semibold pb-5">Tools</h3>
 						{tools.map(({ label, svg, alt, path, className }) => {
 							return (
