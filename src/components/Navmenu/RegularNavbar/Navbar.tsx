@@ -47,19 +47,25 @@ const Navbar = () => {
 				<ul className="flex lg:gap-14 gap-5 justify-around lg:text-xl">
 					<li
 						className="nav-to-section opacity-0"
-						ref={(el) => (linksRefs.current[0] = el)}
+						ref={(el) => {
+							linksRefs.current[0] = el;
+						}}
 					>
 						<Link href="#Skills">Skills</Link>
 					</li>
 					<li
 						className="nav-to-section opacity-0"
-						ref={(el) => (linksRefs.current[1] = el)}
+						ref={(el) => {
+							linksRefs.current[1] = el;
+						}}
 					>
 						<Link href="#Projects">Projects</Link>
 					</li>
 					<li
 						className="nav-to-section opacity-0"
-						ref={(el) => (linksRefs.current[2] = el)}
+						ref={(el) => {
+							linksRefs.current[2] = el;
+						}}
 					>
 						<Link href="#Contact">Contact</Link>
 					</li>
