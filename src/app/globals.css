@@ -57,6 +57,12 @@ body {
 		)
 		rgb(var(--background-start-rgb));
 	overflow-x: hidden;
+	background-image: repeating-linear-gradient(
+			45deg,
+			transparent 0 49px,
+			#2f2e2e 50px
+		),
+		repeating-linear-gradient(135deg, transparent 0 49px, #2f2e2e 50px);
 }
 
 /* hover Navigation */
@@ -90,7 +96,7 @@ body {
 		rgb(255, 255, 255) 0%,
 		rgba(168, 85, 247, 1) 70%
 	);
-	transition: transform 0.20s ease-out;
+	transition: transform 0.2s ease-out;
 }
 
 .nav-to-section:hover::before {
