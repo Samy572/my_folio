@@ -29,11 +29,11 @@ export const GetProjectDesktop = [
 
 	{
 		id: 2,
-		label: 'Games Quest',
-		png: '/asset/images/projects/games.png',
+		label: 'Signals Return',
+		png: '/asset/images/projects/signals.png',
 		description:
-			'An application for viewing and searching video games via the RAWG api.',
-		path: 'https://my-app-samy572.vercel.app',
+			'An website to sell trading indicator',
+		path: 'https://signalsreturn.com',
 		language: [
 			{
 				label: 'Next',
