@@ -5,7 +5,7 @@ export const GetBadge = () => [
 		svg: 'asset/svg/github.svg',
 		alt: 'github profile',
 		className:
-			'inline-flex items-center justify-between rounded-md border w-fit px-2 py-0.5 text-lg font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent  shadow bg-[#646464] hover:bg-[#36363b] md:mr-4 mr-2 my-2',
+			'inline-flex items-center justify-between rounded-md border w-fit px-2 py-0.5 text-lg font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-neutral-600  shadow bg-[#24292f] hover:bg-[#161b22] md:mr-4 mr-2 my-2',
 	},
 	{
 		path: 'https://www.linkedin.com/in/samydevfront/',
@@ -13,7 +13,7 @@ export const GetBadge = () => [
 		svg: 'asset/svg/linkedin.svg',
 		alt: 'linkedin profile',
 		className:
-			'inline-flex items-center justify-between rounded-md border w-fit px-2 py-0.5 text-lg font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent  shadow bg-[#646464] hover:bg-[#36363b] md:mr-4 mr-2 my-2',
+			'inline-flex items-center justify-between rounded-md border w-fit px-2 py-0.5 text-lg font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent  shadow bg-[#0a66c2] hover:bg-[#084e96] md:mr-4 mr-2 my-2',
 	},
 	{
 		path: 'mailto:samy_ch@outlook.fr',
@@ -21,6 +21,6 @@ export const GetBadge = () => [
 		svg: 'asset/svg/mail.svg',
 		alt: 'email samy_ch@outlook.fr',
 		className:
-			'inline-flex items-center justify-between rounded-md border w-fit px-2 py-0.5 text-lg font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent  shadow bg-[#646464] hover:bg-[#36363b] md:mr-4 mr-2 my-2',
+			'inline-flex items-center justify-between rounded-md border w-fit px-2 py-0.5 text-lg font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent  shadow bg-[#0078d4] hover:bg-[#005a9e] md:mr-4 mr-2 my-2',
 	},
 ];
