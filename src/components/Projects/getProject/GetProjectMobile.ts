@@ -80,4 +80,31 @@ export const GetProjectMobile =  [
 
 		github: 'https://github.com/Samy572/pagex',
 	},
+	{
+		id: 4,
+		label: 'Signals Return',
+		png: '/asset/images/projects/signals.png',
+		description:
+			'An website to sell trading indicator',
+		path: 'https://signalsreturn.com',
+		language: [
+			{
+				label: 'Next',
+				svg: 'asset/svg/frontend/next.svg',
+				alt: 'next',
+				path: 'https://nextjs.org/',
+				className:
+					'inline-flex items-center justify-between rounded-md border w-fit px-2 py-0.5  font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-neutral-600  shadow bg-black hover:bg-neutral-900 md:mr-4 mr-2 my-2 ',
+			},
+			{
+				label: 'Typescript',
+				svg: 'asset/svg/frontend/ts.svg',
+				alt: 'typescript',
+				path: 'https://www.typescriptlang.org/',
+				className:
+					'inline-flex items-center justify-between rounded-md border w-fit px-2 py-0.5  font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-none  shadow bg-[#3178c6] hover:bg-[#235a97] md:mr-4 mr-2 my-2 ',
+			},
+		],
+		github: 'https://github.com/Samy572/my-app',
+	},
 ];
