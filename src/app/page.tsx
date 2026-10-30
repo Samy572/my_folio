@@ -23,18 +23,18 @@ export default function Home() {
 				opacity: 1,
 				delay: 0.4,
 				duration: 0.5,
-			}
+			},
 		);
 	});
 
 	return (
-		<div>
+		<main>
 			<div
 				ref={lineRef}
 				className=" opacity-0
 			 h-4 bg-gradient-to-r from-indigo-500  to-purple-300 "
 			></div>
-			<div className="max-w-7xl mx-auto  px-3 pt-8 ">
+			<div className="max-w-7xl mx-auto  px-10 pt-8 ">
 				<Navbar />
 				<MobileNavBar />
 				<About />
@@ -43,6 +43,6 @@ export default function Home() {
 				<Contact />
 				<Footer />
 			</div>
-		</div>
+		</main>
 	);
 }
