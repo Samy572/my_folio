@@ -2,7 +2,6 @@
 
 import clsx from 'clsx';
 import Image from 'next/image';
-import { useEffect, useState } from 'react';
 
 type Props = {
 	openNav: boolean;
@@ -10,52 +9,36 @@ type Props = {
 };
 
 const ToggleMenu = ({ openNav, setOpenNav }: Props) => {
-	// Watch scroll position
-	const [scrolling, setScrolling] = useState(false);
-	const [scrollTop, setScrollTop] = useState(0);
-
-	useEffect(() => {
-		const onScroll = (e: any) => {
-			setScrollTop(e.target.documentElement.scrollTop);
-			setScrolling(e.target.documentElement.scrollTop > scrollTop);
-		};
-		window.addEventListener('scroll', onScroll);
-		return () => window.removeEventListener('scroll', onScroll);
-	}, [scrollTop]);
-
 	return (
-		<>
-			<button
-				onClick={() => setOpenNav(!openNav)}
-				className=" cursor-pointer z-50"
-				role="button"
-				disabled={scrolling}
-			>
-				{scrolling === false ? (
-					<Image
-						className={clsx(
-							openNav ? 'opacity-0' : 'opacity-1 ',
-							'transition-opacity duration-500 fixed  right-5 top-8  z-50  '
-						)}
-						src={'/asset/svg/burger.svg'}
-						width={35}
-						height={35}
-						alt="menu"
-					/>
-				) : null}
-
-				<Image
-					className={clsx(
-						openNav === false ? 'opacity-0' : 'opacity-1',
-						'transition-opacity duration-500 fixed top-8 right-5 z-50  '
-					)}
-					src={'/asset/svg/close.svg'}
-					width={35}
-					height={35}
-					alt="close-menu"
-				/>
-			</button>
-		</>
+		<button
+			type="button"
+			onClick={() => setOpenNav(!openNav)}
+			aria-label={openNav ? 'Close menu' : 'Open menu'}
+			aria-expanded={openNav}
+			aria-controls="mobile-menu"
+			className="fixed top-5 right-4 z-50 flex h-11 w-11 items-center justify-center rounded-full border border-neutral-700 bg-[#181818]/80 backdrop-blur cursor-pointer active:scale-95 transition-transform"
+		>
+			<Image
+				className={clsx(
+					openNav ? 'opacity-0 rotate-90' : 'opacity-100 rotate-0',
+					'absolute transition-all duration-300'
+				)}
+				src={'/asset/svg/burger.svg'}
+				width={26}
+				height={26}
+				alt=""
+			/>
+			<Image
+				className={clsx(
+					openNav ? 'opacity-100 rotate-0' : 'opacity-0 -rotate-90',
+					'absolute transition-all duration-300'
+				)}
+				src={'/asset/svg/close.svg'}
+				width={26}
+				height={26}
+				alt=""
+			/>
+		</button>
 	);
 };
 export default ToggleMenu;
