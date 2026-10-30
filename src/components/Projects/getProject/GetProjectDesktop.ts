@@ -13,7 +13,7 @@ export const GetProjectDesktop = [
 				alt: 'react',
 				path: 'https://reactjs.org/',
 				className:
-					' lg:inline-flex items-center justify-between rounded-md border w-fit px-2 py-0.5  font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-none  shadow bg-[#087ea4] hover:bg-[#066686] md:mr-4 mr-2 my-2 ',
+					' lg:inline-flex items-center justify-between rounded-md border w-fit px-2 py-0.5  font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-none  shadow bg-[#087ea4] hover:bg-[#066686] md:mr-4 mr-2 my-2',
 			},
 			{
 				label: 'Styled-Components',
@@ -31,8 +31,7 @@ export const GetProjectDesktop = [
 		id: 2,
 		label: 'Signals Return',
 		png: '/asset/images/projects/signals.png',
-		description:
-			'An website to sell trading indicator',
+		description: 'An website to sell trading indicator',
 		path: 'https://signalsreturn.com',
 		language: [
 			{

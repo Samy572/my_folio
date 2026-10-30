@@ -1,32 +1,7 @@
 export const GetProjectMobile =  [
+
 	{
 		id: 1,
-		label: 'Crypto Tracker',
-		png: '/asset/svg/crypto.svg',
-		description: 'Dashboard for tracking crypto currencies.',
-		path: 'https://resplendent-unicorn-c94188.netlify.app',
-		language: [
-			{
-				label: 'React',
-				svg: 'asset/svg/frontend/react.svg',
-				alt: 'react',
-				path: 'https://reactjs.org/',
-				className:
-					' inline-flex items-center justify-between rounded-md border w-fit px-2 py-0.5  font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-none  shadow bg-[#087ea4] hover:bg-[#066686] md:mr-4 mr-2 my-2 ',
-			},
-			{
-				label: 'SCSS',
-				svg: 'asset/svg/frontend/scss.svg',
-				alt: 'Sass',
-				path: 'https://sass-lang.com/',
-				className:
-					' inline-flex items-center justify-between rounded-md border w-fit px-2 py-0.5  font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-none  shadow bg-[#cc6699] hover:bg-[#a8517d] md:mr-4 mr-2 my-2 ',
-			},
-		],
-		github: 'https://github.com/Samy572/Crypto-view',
-	},
-	{
-		id: 2,
 		label: 'Games Quest',
 		png: '/asset/images/projects/games.png',
 		description:
@@ -53,7 +28,7 @@ export const GetProjectMobile =  [
 		github: 'https://github.com/Samy572/my-app',
 	},
 	{
-		id: 3,
+		id: 2,
 		label: 'Page X',
 		png: '/asset/images/projects/hoobank.png',
 		description:
@@ -81,7 +56,7 @@ export const GetProjectMobile =  [
 		github: 'https://github.com/Samy572/pagex',
 	},
 	{
-		id: 4,
+		id: 3,
 		label: 'Signals Return',
 		png: '/asset/images/projects/signals.png',
 		description:
