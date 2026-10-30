@@ -100,7 +100,15 @@ body {
 
 /* About*/
 .about {
-	height: calc(100vh - 100px);
+	min-height: calc(100vh - 100px);
+	min-height: calc(100dvh - 100px);
+}
+
+/* en 2 colonnes le contenu est court: pas de hauteur minimale */
+@media (min-width: 768px) {
+	.about {
+		min-height: 0;
+	}
 }
 
 /* Border title */

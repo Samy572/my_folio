@@ -27,7 +27,7 @@ const Contact = () => {
 		);
 	});
 	return (
-		<section id="Contact" className="h-[50vh] py-10">
+		<section id="Contact" className="min-h-[50vh] py-10">
 			<div className="flex justify-center lg:justify-start  lg:flex-col pb-10 tracking-wide">
 				<h2
 					ref={titleRef}

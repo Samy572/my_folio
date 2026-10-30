@@ -27,7 +27,7 @@ const RightSide = () => {
 			className="opacity-0 w-44 h-44 sm:h-fit sm:w-fit  bg-gradient-to-b from-indigo-500 to-purple-100  rounded-full flex justify-center items-center"
 		>
 			<Image
-				className="z-10 overflow-hidden  rounded-full"
+				className="z-10 overflow-hidden rounded-full w-full h-auto max-w-[350px]"
 				src={'/asset/images/profile.webp'}
 				width={350}
 				height={350}

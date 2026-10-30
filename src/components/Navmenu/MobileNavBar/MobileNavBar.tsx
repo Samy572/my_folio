@@ -14,7 +14,7 @@ const MobileNavBar = () => {
 			<ul
 				className={clsx(
 					openNav
-						? 'flexbg-slate-600 translate-y-0  z-30 h-[50vh] fixed  top-0 left-0 '
+						? 'translate-y-0  z-30 h-[50vh] fixed  top-0 left-0 '
 						: 'translate-y-[-120%] z-30 h-[110vh] fixed left-0',
 					'transition-all duration-300 ease-in-out  flex-col gap-5 justify-center lg:text-xl w-full  backdrop-blur-2xl flex items-start  text-xl px-7 space-y-3 '
 				)}

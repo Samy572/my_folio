@@ -56,14 +56,14 @@ const Skills = () => {
 	}, []);
 
 	return (
-		<section id="Skills" className=" mt-6 py-4 lg:h-[50vh]    w-full ">
+		<section id="Skills" className=" mt-6 py-4 lg:min-h-[50vh]    w-full ">
 			<div className="flex justify-center lg:justify-start pb-10">
 				<h2 ref={titleRef} className=" font-bold text-4xl text-border w-fit  ">
 					My Skills
 				</h2>
 			</div>
 			<div className=" justify-center  flex items-center  pt-3">
-				<div className=" w-full  lg:h-48   grid lg:grid-cols-3 grid-cols-1">
+				<div className=" w-full  lg:min-h-[12rem]   grid lg:grid-cols-3 grid-cols-1">
 					<div ref={(el) => {skillRefs.current[0] = el}} className="pt-5 ">
 						<h3 className="text-2xl font-semibold pb-5">Frontend</h3>
 						{frontend.map(({ label, svg, alt, path, className }) => {

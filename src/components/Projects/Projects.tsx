@@ -87,7 +87,7 @@ const Projects = () => {
 									projectRefs.current[index] = el;
 								}}
 								key={id}
-								className="relative  text-white  bg-[#36363b] h-64 w-full p-3 rounded-3xl grid opacity-0 overflow-hidden "
+								className="relative  text-white  bg-[#36363b] min-h-[16rem] gap-2 w-full p-3 rounded-3xl grid opacity-0 overflow-hidden "
 							>
 								<HoverCard position={hoverPositions[id]} />
 
@@ -138,7 +138,7 @@ const Projects = () => {
 										alt="go to code project"
 									/>
 								</Link>
-								<div className="flex h-fit z-50">
+								<div className="flex flex-wrap h-fit z-50">
 									{language.map(({ label, svg, alt, path, className }, id) => (
 										<Badge
 											key={id}

@@ -13,7 +13,7 @@ export default function useMobileLayout() {
 		if (typeof window !== 'undefined') {
 			const handleResize = () => {
 				setWindowWidth(window.innerWidth);
-				window.innerWidth > 1024
+				window.innerWidth >= 1024
 					? setProject(GetProjectDesktop)
 					: setProject(GetProjectMobile);
 			};
@@ -36,7 +36,7 @@ export default function useMobileLayout() {
 
 	useEffect(() => {
 		if (typeof window !== 'undefined') {
-			window.innerWidth > 1024
+			window.innerWidth >= 1024
 				? setProject(GetProjectDesktop)
 				: setProject(GetProjectMobile);
 		}
